@@ -32,7 +32,7 @@ function populateTextarea() {
     const savedSettings = JSON.parse(savedMessage);
     const formEl = form.elements;
 
-    formEl[1].value = savedSettings.message;
-    formEl[0].value = savedSettings.email;
+    formEl['message'].value = savedSettings.message;
+    formEl['email'].value = savedSettings.email;
   }
 }
